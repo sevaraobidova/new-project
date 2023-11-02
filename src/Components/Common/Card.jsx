@@ -4,7 +4,7 @@ import './Card.scss'
 const Card = ({children}) => {
   return (
     <div>
-      <h1>{children}</h1>
+      {children}
     </div>
   )
 }

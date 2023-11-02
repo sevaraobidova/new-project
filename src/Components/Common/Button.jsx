@@ -4,7 +4,7 @@ import './Button.scss'
 const Button = ({children}) => {
   return (
     <div>
-      {children}
+      <button>{children}</button>
     </div>
   )
 }
