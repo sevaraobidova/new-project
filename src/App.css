@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --heading-font-family: 'Poppins', sans-serif;
+    --text-font-family: 'Libre Franklin', sans-serif;
+    --heading-color: rgba(0, 0, 0, 1);
+    --text-color:rgba(108, 108, 108, 1);
+}
+html{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-small{
+    width: 60%;
+    margin: 0 auto;
+}
