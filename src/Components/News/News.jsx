@@ -3,8 +3,14 @@ import './News.scss'
 
 const News = () => {
   return (
-    <div>
-      
+    <div className='news container'>
+      {/* Title goes here */}
+
+      <div className="email">
+        <input type="email" placeholder='Enter your email' />
+       
+        {/* Button Dark here */}
+      </div>
     </div>
   )
 }
