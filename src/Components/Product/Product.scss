@@ -1,0 +1,90 @@
+.product {
+  .top{
+    padding: 10% 0;
+  }
+  .container {
+    .product-header {
+      text-align: center;
+    }
+    .product-imgs {
+      display: flex;
+      justify-content: space-between;
+      padding: 7rem 0;
+    }
+    .product-text {
+      display: flex;
+      gap: 5rem;
+      h1 {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        font-size: 2.9rem;
+        line-height: 3.6rem;
+        font-family: var(--heading-font-family);
+      }
+    }
+  }
+  .pots {
+    padding: 10% 0;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    border-top: 1px solid rgba(235, 235, 235, 1);
+    .container {
+      .vase-one, .vase-two {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        .background {
+          position: absolute;
+          left: 5%;
+          z-index: -1;
+          bottom: 30%;
+        }
+        .background2 {
+            position: absolute;
+            right: 5%;
+            z-index: -1;
+            bottom: 30%;
+          }
+        .pot-text {
+          h1 {
+            font-family: var(--heading-font-family);
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 3.4rem;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          h4 {
+            font-family: var(--heading-font-family);
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 2.4rem;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .product {
+    .container {
+      .product-imgs {
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+      .product-text {
+        flex-wrap: wrap;
+      }
+    }
+    .pots{
+        .container{
+            .vase-one, .vase-two{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+  }
+}
