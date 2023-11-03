@@ -3,7 +3,7 @@ import './Title.scss'
 
 const Title = ({children}) => {
   return (
-    <div>
+    <div className='content'>
       {children}
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
-import './Showcase.scss'
+import './Showcase.css'
 import Button from '../Common/Button'
-// import showImg from ".../assets/img/showcase-background.png";
+import showImg from "../../assets/img/showcase-background.png";
 
 
 const Showcase = () => {
@@ -12,13 +12,13 @@ const Showcase = () => {
         <div className="container">
           <div className="showcase-inside">
             <div className="showcase-text">
-              <h3>Pompeo POttery</h3>
-              <h1>Unique Porcelain Stone Collection</h1>
-              <p>Unique & modern pottery made by our master in porcelain & stones</p>
+              <h3 className='showcase-red-text'>Pompeo POttery</h3>
+              <h1 className='showcase-heading'>Unique Porcelain Stone Collection</h1>
+              <p className='showcase-ordinary-text'>Unique & modern pottery made by our master in porcelain & stones</p>
               <Button>Shop Collection</Button>
             </div>
             <div className="showcase-img">
-              <img src=".../assets/img/showcase-background.png" alt="" />
+              <img src={showImg} alt="" />
             </div>
           </div>
         </div>

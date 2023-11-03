@@ -1,1 +1,74 @@
-/*# sourceMappingURL=Product.css.map */
+.product .top {
+  padding: 10% 0;
+}
+.product .container .product-header {
+  text-align: center;
+}
+.product .container .product-imgs {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 0;
+}
+.product .container .product-text {
+  display: flex;
+  gap: 5rem;
+}
+.product .container .product-text h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 3.6rem;
+  font-family: var(--heading-font-family);
+}
+.product .pots {
+  padding: 10% 0;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  border-top: 1px solid rgb(235, 235, 235);
+}
+.product .pots .container .vase-one, .product .pots .container .vase-two {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.product .pots .container .vase-one .background, .product .pots .container .vase-two .background {
+  position: absolute;
+  left: 5%;
+  z-index: -1;
+  bottom: 30%;
+}
+.product .pots .container .vase-one .background2, .product .pots .container .vase-two .background2 {
+  position: absolute;
+  right: 5%;
+  z-index: -1;
+  bottom: 30%;
+}
+.product .pots .container .vase-one .pot-text h1, .product .pots .container .vase-two .pot-text h1 {
+  font-family: var(--heading-font-family);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.product .pots .container .vase-one .pot-text h4, .product .pots .container .vase-two .pot-text h4 {
+  font-family: var(--heading-font-family);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 770px) {
+  .product .container .product-imgs {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .product .container .product-text {
+    flex-wrap: wrap;
+  }
+  .product .pots .container .vase-one, .product .pots .container .vase-two {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=Product.css.map */
