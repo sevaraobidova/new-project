@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 import './App.css'
 import Header from './Components/Layout/Header.jsx'
@@ -10,7 +10,6 @@ import News from './Components/News/News'
 import Footer from './Components/Layout/Footer'
 
 function App() {
-
   return (
     <>
     <Header />
@@ -21,7 +20,7 @@ function App() {
     <News />
     <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

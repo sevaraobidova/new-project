@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 16px;
+    .nav-btn {
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.8rem;
+    }
+
+.menu{
+    display: flex;
+    gap:32px;
+    align-items: center;
+    .menu-list{
+        display: flex;
+        align-items: center;
+        gap:30px;
+        .nav-btn {
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: black;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.8rem;
+        }
+
+
+
+li{
+    list-style: none;
+    .menu-item-link{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        color: #6C6C6C;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+            color: #AC1313;
+        }
+    }
+}
+    }
+}
+
+}
+
+.menu-item-link-cart{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6C6C6C;
+    text-decoration: none;
+    border-left: 1px solid #6C6C6C;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    &:hover{
+        color: #AC1313;
+    }
+
+   
+
+}
+
+
+.responsive_nav {
+    transform: translateY(100vh);
+}
+
+@media(max-width:800px){
+    .header{
+        .nav-btn {
+            visibility: visible;
+            opacity: 1;
+        }}
+}
+
+@media (max-width: 770px){
+    .header{
+        .nav-btn {
+            visibility: visible;
+            opacity: 1;
+        }
+        .menu{
+            position: fixed;
+            top: -100vh;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #dc666634;
+            transition: 1s;
+            .menu-list{
+               &:hover{
+                color: black;
+               }
+                .nav-btn {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            .nav-close-btn {
+                position: absolute;
+                bottom:2rem;
+                right: 2rem;
+            }
+        }
+      
+    }
+}
